@@ -11,8 +11,10 @@ function App() {
         Stationary Site
         <DateTime />        
       </header>
-      <Products />
-      <ShoppingCart/>
+      <div className="app-containers">
+        <Products />
+        <ShoppingCart/>
+      </div>
     </div>
   );
 }

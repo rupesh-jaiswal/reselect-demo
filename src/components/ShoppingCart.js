@@ -28,7 +28,7 @@ class ShoppingCart extends Component {
         )
     }
 }
-
+/*
 const getshoppingItems = createSelector(
     state => state.productReducer.products,
     state => state.shoppingCartReducer.cartItems,
@@ -37,7 +37,16 @@ const getshoppingItems = createSelector(
             return products[index];
         });
     }
-)
+);
+
+*/
+const getshoppingItems = (state) => {
+    return state.shoppingCartReducer.cartItems.map(index=>{
+        return state.productReducer.products[index];
+    });
+}
+
+
 function mapStateToProps(state) {
     return {
         products:getshoppingItems(state) 

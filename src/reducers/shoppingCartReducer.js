@@ -1,5 +1,5 @@
 const initialState = {
-    cartItems: [1,2]
+    cartItems: []
 };
 
 export default function shoppingCartReducer(state=initialState, action) {
