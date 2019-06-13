@@ -1,6 +1,6 @@
 import React from 'react';
 import { connect } from "react-redux";
-class DateTime extends React.Component {
+class DateTimeComponent extends React.Component {
     componentDidMount(){
         setInterval(() => {
             const today = new Date();
@@ -13,4 +13,4 @@ class DateTime extends React.Component {
     }
 };
 
-export default connect(state => ({currentTime: state.dateReducer.currentTime}))(DateTime)
+export default connect(state => ({currentTime: state.dateReducer.currentTime}))(DateTimeComponent)
