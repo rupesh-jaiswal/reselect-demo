@@ -3,13 +3,13 @@ import logo from './logo.svg';
 import './App.css';
 import Products from './components/Products';
 import ShoppingCart from './components/ShoppingCart';
-import DateTime from './components/DateTime';
+import DateTimeComponent from './components/DateTimeComponent';
 function App() {
   return (
     <div className="App">
       <header className="App-header">
         Stationary Site
-        <DateTime />        
+        <DateTimeComponent />        
       </header>
       <div className="app-containers">
         <Products />
