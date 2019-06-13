@@ -4,7 +4,7 @@ class DateTime extends React.Component {
     componentDidMount(){
         setInterval(() => {
             const today = new Date();
-            const time = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
+            const time = today.getHours() + "::" + today.getMinutes() + "::" + today.getSeconds();
             this.props.dispatch({type: 'SET_DATE', time});
         },1000);
     }
